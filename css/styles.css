@@ -1,0 +1,227 @@
+/*===== GENERAL =====*/
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+  color: var(--slate);
+}
+
+/* ===== COMPONENTS ===== */
+/* LOGO */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--iris);
+}
+
+.dark-logo {
+  color: var(--navy-blue);
+}
+
+.light-logo {
+  color: var(--cloud);
+}
+
+/* ===== HEADER ===== */
+
+/* NAVIGATION */
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--navy-blue);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--ocean);
+}
+
+/* ADDRESS */
+.address {
+  font-style: normal;
+}
+.contact-address {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--slate);
+}
+.contact-address:hover,
+.contact-address:focus {
+  color: var(--ocean);
+}
+
+/* ===== MAIN PAGE ===== */
+/* HERO */
+.hero {
+  background: var(--navy-blue);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--white);
+}
+
+.main-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: var(--white);
+  background-color: var(--iris);
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--ocean);
+}
+
+/* ABOUT COMPANY */
+.about-cmp-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--navy-blue);
+}
+
+.about-cmp-text {
+  line-height: 1.5;
+}
+
+/* WHAT ARE WE DOING */
+/* TITLE */
+.primary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--navy-blue);
+}
+
+/* TEAM */
+.team {
+  background: var(--cloud);
+}
+
+.employee-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--navy-blue);
+}
+
+.employee-profession {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.employee-item {
+  background-color: var(--white);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--navy-blue-modal);
+}
+
+.footer-text {
+  color: var(--cloud);
+}
+
+/* ===== PORTFOLIO ===== */
+.btn-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: var(--iris);
+  background: var(--cloud);
+}
+
+.btn-item:hover,
+.btn-item:focus {
+  color: var(--white);
+  background: var(--ocean);
+}
+
+.service-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--navy-blue);
+}
+
+.service-text {
+  line-height: 1.5;
+  color: var(--slate);
+}
