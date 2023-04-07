@@ -1,4 +1,29 @@
-/*===== GENERAL =====*/
+/*===== RESET START =====*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -7,6 +32,24 @@
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*===== /RESET END =====*/
+/**
+  |============================
+  | GENERAL
+  |============================
+*/
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -30,9 +73,39 @@ body {
   letter-spacing: 0.02em;
   background-color: #ffffff;
   color: var(--slate);
+
+  width: 1440px;
 }
 
-/* ===== COMPONENTS ===== */
+.primary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--navy-blue);
+
+  margin-bottom: 72px;
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* LOGO */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -44,6 +117,7 @@ body {
   text-transform: uppercase;
 
   color: var(--iris);
+  margin-right: 76px;
 }
 
 .dark-logo {
@@ -53,10 +127,22 @@ body {
 .light-logo {
   color: var(--cloud);
 }
-
-/* ===== HEADER ===== */
-
 /* NAVIGATION */
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -71,11 +157,16 @@ body {
 .menu-link:focus {
   color: var(--ocean);
 }
-
 /* ADDRESS */
 .address {
   font-style: normal;
 }
+
+.address-list {
+  display: flex;
+  align-items: center;
+}
+
 .contact-address {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -87,15 +178,25 @@ body {
 
   color: var(--slate);
 }
+
 .contact-address:hover,
 .contact-address:focus {
   color: var(--ocean);
 }
 
-/* ===== MAIN PAGE ===== */
-/* HERO */
+.tel-address {
+  margin-left: 40px;
+}
+/**
+  |============================
+  | HERO
+  |============================
+*/
 .hero {
   background: var(--navy-blue);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -107,6 +208,12 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--white);
+  margin-bottom: 42px;
+
+  margin-left: 320px;
+  margin-right: 320px;
+
+  width: 496px;
 }
 
 .main-btn {
@@ -116,10 +223,12 @@ body {
   line-height: 1.5;
 
   letter-spacing: 0.04em;
-  cursor: pointer;
 
   color: var(--white);
   background-color: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .main-btn:hover,
@@ -127,7 +236,11 @@ body {
   background-color: var(--ocean);
 }
 
-/* ABOUT COMPANY */
+/**
+  |============================
+  | ABOUT COMPANY
+  |============================
+*/
 .about-cmp-title {
   font-weight: 500;
   font-size: 20px;
@@ -136,29 +249,52 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--navy-blue);
+
+  margin-bottom: 8px;
 }
 
 .about-cmp-text {
   line-height: 1.5;
+  /* width: 264px; */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* WHAT ARE WE DOING */
-/* TITLE */
-.primary-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-
-  color: var(--navy-blue);
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-/* TEAM */
+.about-cmp-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-cmp-item:not(:last-child) {
+  margin-right: 24px;
+}
+/**
+  |============================
+  | WHAT ARE WE DOING
+  |============================
+*/
+.tehnologies-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tehnologies {
+  padding-bottom: 120px;
+}
+/**
+  |============================
+  | TEAM
+  |============================
+*/
 .team {
   background: var(--cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .employee-title {
@@ -170,6 +306,8 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--navy-blue);
+
+  margin-bottom: 8px;
 }
 
 .employee-profession {
@@ -179,18 +317,42 @@ body {
 
 .employee-item {
   background-color: var(--white);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
-/* ===== FOOTER ===== */
-.footer {
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-perm {
+  padding: 32px 16px 32px 16px;
+}
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
+.page-footer {
   background: var(--navy-blue-modal);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-text {
   color: var(--cloud);
+  width: 264px;
+  margin-top: 16px;
 }
 
-/* ===== PORTFOLIO ===== */
+/**
+  |============================
+  | PORTFOLIO
+  |============================
+*/
 .btn-item {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -199,16 +361,44 @@ body {
 
   text-align: center;
   letter-spacing: 0.04em;
-  cursor: pointer;
 
   color: var(--iris);
   background: var(--cloud);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  padding: 12px 24px 12px 24px;
+  min-width: 69px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btn-container {
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .btn-item:hover,
 .btn-item:focus {
   color: var(--white);
   background: var(--ocean);
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.service-container {
+  padding-bottom: 120px;
 }
 
 .service-title {
@@ -219,9 +409,24 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--navy-blue);
+
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .service-text {
   line-height: 1.5;
   color: var(--slate);
+  padding-left: 16px;
+}
+
+.service-item {
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+  width: 360px;
+}
+
+.service-perm {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
