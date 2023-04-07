@@ -138,11 +138,12 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-}
-
-.menu-item {
   padding: 24px 0;
 }
+
+/* .menu-item {
+  padding: 24px 0;
+} */
 
 .menu-link {
   font-weight: 500;
