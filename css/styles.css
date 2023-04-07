@@ -138,12 +138,9 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-
-/* .menu-item {
-  padding: 24px 0;
-} */
 
 .menu-link {
   font-weight: 500;
