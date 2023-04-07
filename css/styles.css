@@ -138,8 +138,8 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
+  padding: 24px 0;
 }
 
 .menu-link {
@@ -150,6 +150,9 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--navy-blue);
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,
