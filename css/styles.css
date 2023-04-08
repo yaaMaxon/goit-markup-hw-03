@@ -67,14 +67,14 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
 
   letter-spacing: 0.02em;
   background-color: #ffffff;
   color: var(--slate);
 
-  width: 1440px;
+  /* width: 1440px; */
 }
 
 .primary-title {
@@ -428,7 +428,7 @@ body {
 
 .service-item {
   background: #ffffff;
-  border: 1px solid #e7e9fc;
+  /* border: 1px solid #e7e9fc; */
 
   width: calc((100% - 48px) / 3);
 }
